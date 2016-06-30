@@ -1,0 +1,39 @@
+a = 0
+b = 0
+
+z = 0
+y = 0
+
+m = 0
+
+l = []
+
+three = []
+five = []
+
+while y <1000:
+    y = a * 5
+    five.append(y)
+    a+=1
+    if y > 1000 or y == 1000:
+        five.pop(a - 1)
+
+while  z <= 1000:
+    z = b * 3
+    three.append(z)
+    b+=1
+    if z > 1000 or z == 1000:
+        three.pop(b-1)
+
+
+print(five)
+print (three)
+
+q = sum(five)
+l.append(q)
+r = sum(three)
+l.append(r)
+
+m = sum(l)
+
+print ("The total sum is: %s" %(m))
